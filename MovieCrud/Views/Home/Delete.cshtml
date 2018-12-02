@@ -1,0 +1,16 @@
+@model Movie
+
+<h2>Delete</h2>
+<hr/>
+<form method="POST" asp-action="delete" asp-controler="home">
+<p>Are you sure delete this movie?</p>
+<div>
+    <p>
+        @Model.Name - @Model.Year
+    </p>
+    <button type="submit" asp-control="home" asp-action="delete"  class="btn btn-danger">Yes, Delete</button>
+    <a asp-control="home" asp-action="index" class="btn btn-success">NO</a>
+    
+</div>
+
+</form>

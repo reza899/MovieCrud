@@ -1,0 +1,19 @@
+@model MovieCrud.Models.Movie
+
+<h2>Create</h2>
+<hr/>
+<form method="POST" asp-action="create" asp-controller="home">
+
+    <p>
+        <input asp-for="Name" class="form-control" type="text" placeholder="Enter the Name"/>
+    </p>
+    <p>
+        <input asp-for="Year" class="form-control" type="number" placeholder="Enter  Year"/>
+    </p>
+    <p> 
+        <input type="submit" class="btn btn-success" />
+    </p>
+    <p>
+        <a asp-action="index" asp-controller="home">Back to List</a>
+        </p>
+</form>
