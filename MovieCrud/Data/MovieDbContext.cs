@@ -9,6 +9,8 @@ namespace MovieCrud.Data
         {
         }
         public DbSet<Movie> Movies { get; set; }
+
+       
     }
 
 }

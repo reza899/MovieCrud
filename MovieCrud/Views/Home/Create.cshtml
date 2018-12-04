@@ -8,7 +8,10 @@
         <input asp-for="Name" class="form-control" type="text" placeholder="Enter the Name"/>
     </p>
     <p>
-        <input asp-for="Year" class="form-control" type="number" placeholder="Enter  Year"/>
+        <select asp-for="Genre" class="form-control" type="text" asp-items="Html.GetEnumSelectList<MovieCrud.Models.Genre>()"></select>
+    </p>
+    <p>
+        <input asp-for="Year" class="form-control" type="number" placeholder="Enter Year"/>
     </p>
     <p> 
         <input type="submit" class="btn btn-success" />

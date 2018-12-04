@@ -7,6 +7,9 @@
 <p>
     <input asp-for="Name" class="form-control">
     </p>
+    <p>
+    <select class="form-control" asp-for="Genre" asp-items="Html.GetEnumSelectList<MovieCrud.Models.Genre>()"></select>
+    </p>
 <p>
     <input asp-for="Year" class="form-control" type="number" />
     </p>
